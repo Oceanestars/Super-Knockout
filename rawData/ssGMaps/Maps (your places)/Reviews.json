@@ -1,0 +1,264 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [ {
+    "geometry" : {
+      "coordinates" : [ -105.2729780, 40.0191054 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x40efaa16e533377d",
+      "Location" : {
+        "Address" : "1710 Pearl St, Boulder, CO 80302, United States",
+        "Business Name" : "Leaf",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "40.0191054",
+          "Longitude" : "-105.2729780"
+        }
+      },
+      "Published" : "2020-03-01T19:54:01.493973Z",
+      "Star Rating" : 4
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -105.2744427, 40.0191810 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0xe21267aa6a029abb",
+      "Location" : {
+        "Address" : "1611 Pearl St, Boulder, CO 80302, United States",
+        "Business Name" : "Foolish Craig's Cafe",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "40.0191810",
+          "Longitude" : "-105.2744427"
+        }
+      },
+      "Published" : "2020-02-29T17:52:35.666721Z",
+      "Star Rating" : 4
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -105.2806946, 40.0170471 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x64cc1a8fe9b2d885",
+      "Location" : {
+        "Address" : "1109 Walnut St, Boulder, CO 80302, United States",
+        "Business Name" : "Rosetta Hall",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "40.0170471",
+          "Longitude" : "-105.2806946"
+        }
+      },
+      "Published" : "2019-11-13T22:04:12.418321Z",
+      "Star Rating" : 5
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -105.0616457, 39.8585574 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0xc1846e8fb1c15715",
+      "Location" : {
+        "Address" : "8905 Westminster Blvd, Westminster, CO 80031, United States",
+        "Business Name" : "Alamo Drafthouse Cinema Westminster",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "39.8585574",
+          "Longitude" : "-105.0616457"
+        }
+      },
+      "Published" : "2019-11-10T01:33:22.053350Z",
+      "Star Rating" : 5
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -104.9893451, 39.7371878 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x43f2045e1893f731",
+      "Location" : {
+        "Address" : "100 W 14th Ave Pkwy, Denver, CO 80204, United States",
+        "Business Name" : "Denver Art Museum",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "39.7371878",
+          "Longitude" : "-104.9893451"
+        }
+      },
+      "Published" : "2019-10-31T01:19:45.092663Z",
+      "Star Rating" : 4
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -105.2693947, 40.0102234 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x71543b4b894ec5d9",
+      "Location" : {
+        "Address" : "1835 Pleasant St, Boulder, CO 80302, United States",
+        "Business Name" : "University Of Colorado Boulder Recreation Center",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "40.0102234",
+          "Longitude" : "-105.2693947"
+        }
+      },
+      "Published" : "2019-10-31T01:19:40.548914Z",
+      "Star Rating" : 5
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -105.2668869, 40.0094720 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x142d00bdef8eb2d0",
+      "Location" : {
+        "Address" : "2400 Colorado Ave, Boulder, CO 80305, United States",
+        "Business Name" : "Folsom Field",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "40.0094720",
+          "Longitude" : "-105.2668869"
+        }
+      },
+      "Published" : "2019-10-31T01:19:34.383951Z",
+      "Star Rating" : 5
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -104.9524475, 39.7165459 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x50dbf16168f92e50",
+      "Location" : {
+        "Address" : "3000 E 1st Ave, Denver, CO 80206, United States",
+        "Business Name" : "Victoria's Secret",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "39.7165459",
+          "Longitude" : "-104.9524475"
+        }
+      },
+      "Published" : "2019-10-31T01:19:20.865989Z",
+      "Star Rating" : 4
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -104.9525639, 39.7155529 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0xbae49e22765f4454",
+      "Location" : {
+        "Address" : "3000 E 1st Ave Suite 112, Denver, CO 80206, United States",
+        "Business Name" : "Which Wich Superior Sandwiches",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "39.7155529",
+          "Longitude" : "-104.9525639"
+        }
+      },
+      "Published" : "2019-10-31T01:19:15.361441Z",
+      "Star Rating" : 4
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -104.9523769, 39.7155300 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0xfc623c041eac695d",
+      "Location" : {
+        "Address" : "3000 E 1st Ave #111, Denver, CO 80206, United States",
+        "Business Name" : "Panda Express",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "39.7155300",
+          "Longitude" : "-104.9523769"
+        }
+      },
+      "Published" : "2019-10-31T01:19:09.961046Z",
+      "Star Rating" : 3
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -105.2718100, 40.0066460 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x530f197bebfbaa6b",
+      "Location" : {
+        "Address" : "1669 Euclid Ave, Boulder, CO 80309, United States",
+        "Business Name" : "Starbucks",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "40.0066460",
+          "Longitude" : "-105.2718100"
+        }
+      },
+      "Published" : "2019-10-31T01:19:02.270322Z",
+      "Star Rating" : 3
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -105.2714858, 40.0067535 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0xd184304c8e955a7",
+      "Location" : {
+        "Address" : "University Of Colorado, Boulder, CO 80309, United States",
+        "Business Name" : "Panda Express",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "40.0067535",
+          "Longitude" : "-105.2714858"
+        }
+      },
+      "Published" : "2019-10-31T01:18:57.741410Z",
+      "Star Rating" : 3
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -105.2578739, 40.0164091 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x55963a1bf572de79",
+      "Location" : {
+        "Address" : "1650 28th St UNIT 1224, Boulder, CO 80301, United States",
+        "Business Name" : "Chipotle Mexican Grill",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "40.0164091",
+          "Longitude" : "-105.2578739"
+        }
+      },
+      "Published" : "2019-10-31T01:18:46.501330Z",
+      "Star Rating" : 4
+    },
+    "type" : "Feature"
+  } ]
+}
