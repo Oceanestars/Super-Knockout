@@ -1,0 +1,6 @@
+{
+    "Data Source": "derived:com.google.distance.delta:com.google.android.gms:LGE:Nexus 5X:a1242c70c3e8b30b:from_activity\u003c-raw:com.google.location.sample:com.google.android.gms:LGE:Nexus 5X:a1242c70c3e8b30b:",
+    "Data Points": [
+        {"fitValue":[{"value":{"fpVal":52.878448486328125}}],"originDataSourceId":"raw:com.google.location.sample:com.google.android.gms:LGE:Nexus 5X:a1242c70c3e8b30b:","endTimeNanos":1455935494994000000,"dataTypeName":"com.google.distance.delta","startTimeNanos":1455935367861000000,"modifiedTimeMillis":1455936524693,"rawTimestampNanos":0}
+    ]
+}

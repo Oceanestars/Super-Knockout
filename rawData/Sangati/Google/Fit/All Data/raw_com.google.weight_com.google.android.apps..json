@@ -1,0 +1,7 @@
+{
+    "Data Source": "raw:com.google.weight:com.google.android.apps.fitness:LGE:Nexus 5X:a1242c70c3e8b30b:user_input",
+    "Data Points": [
+        {"fitValue":[{"value":{"fpVal":52.16307830810547}}],"originDataSourceId":"raw:com.google.weight:com.google.android.apps.fitness:LGE:Nexus 5X:a1242c70c3e8b30b:user_input","endTimeNanos":1455844831378000000,"dataTypeName":"com.google.weight","startTimeNanos":1455844831378000000,"modifiedTimeMillis":1455844882975,"rawTimestampNanos":0},
+        {"fitValue":[{"value":{"fpVal":53.07026290893555}}],"originDataSourceId":"raw:com.google.weight:com.google.android.apps.fitness:LGE:Nexus 5X:a1242c70c3e8b30b:user_input","endTimeNanos":1455844973048000000,"dataTypeName":"com.google.weight","startTimeNanos":1455844973048000000,"modifiedTimeMillis":1455847112802,"rawTimestampNanos":0}
+    ]
+}
