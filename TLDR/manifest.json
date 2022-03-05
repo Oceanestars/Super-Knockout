@@ -1,0 +1,28 @@
+
+   
+{
+    "manifest_version": 2,
+    "name": "TLDR",
+    "version": "0.0.1",
+    "minimum_chrome_version": "42",
+    "devtools_page": "main.html",
+  
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  
+    "background": {
+      "scripts": [ "background.js" ]
+    },
+  
+    "icons": {
+      "128": "logo/tldr.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+      },
+      
+    "permissions": [
+      "http://*/*",
+      "https://*/*",
+      "activeTab"
+    ]
+  }

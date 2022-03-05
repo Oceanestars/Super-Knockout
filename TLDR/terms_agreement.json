@@ -1,0 +1,12 @@
+{
+    "Website" :  [
+        {
+            "websiteName": "Facebook",
+            "termsAgreement": ["Collect your friend list", "Keep track of post you like, share, and comment", "Collect your location"],
+        },
+        {
+            "websiteName": "Instagram",
+            "termsAgreement": ["Collect your friend list", "Keep track of post you like, share, and comment", "Collect your location"],
+        }
+    ]
+}
