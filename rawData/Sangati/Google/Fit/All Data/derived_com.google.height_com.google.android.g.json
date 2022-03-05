@@ -1,6 +1,0 @@
-{
-    "Data Source": "derived:com.google.height:com.google.android.gms:merge_height",
-    "Data Points": [
-        {"fitValue":[{"value":{"fpVal":1.6002000570297241}}],"originDataSourceId":"raw:com.google.height:com.google.android.apps.fitness:LGE:Nexus 5X:a1242c70c3e8b30b:user_input","endTimeNanos":1455844829277000000,"dataTypeName":"com.google.height","startTimeNanos":1455844829277000000,"modifiedTimeMillis":1455844883063,"rawTimestampNanos":0}
-    ]
-}
