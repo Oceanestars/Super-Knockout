@@ -1,32 +1,47 @@
+var terms = ""
 
-var path = window.location.pathname;
-var page = path.split("/").pop();
-console.log( "Page" + page );
-
-function getData(){
-    fetch('terms_agreement.json')
-    .then(response => response.json())
-    .then(data => console.log(data));
+function getPageName(){
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+    return page;
 }
 
 async function loadData() {
     const response = await fetch('./terms_agreement.json');
     const data = await response.json();
-    console.log(data); 
+    return data;
   }
-  loadData();
+
 function getTermsAgreement(){
 
-    var data = getData();
-    console.log(data);
+    var data = loadData();
+    var pageName = getPageName();
+    console.log("pageName: " + pageName);
+  
+    var paragraph_TermAg = document.getElementById("terms_agreement");
+    var websiteNameHeader = document.getElementById("websiteName");
 
-    // var terms = ""
-    // var paragraph_TermAg = document.getElementById("terms_agreement");
-    // data.map((item) => ( terms.append("<li>" +item[1].termsAgreement + "</li>")))
-    // var websiteName = document.getElementById("websiteName");
+    data.then(function(result) {
+        console.log(result["Website"][0].termsAgreement)
+        for (let i = 0; i < 3; i++) {
+            checkPage = pageName.includes(result["Website"][i].websiteName.toLowerCase())
+            console.log("IS this in json" + checkPage);
+            if (checkPage){
+                for (let j = 0 ; j < result["Website"][i].termsAgreement.length; j++) {
+                terms += `<li> ${result["Website"][i].termsAgreement[j]} </li>`;
+                }
+                websiteNameHeader.innerHTML =  result["Website"][i].websiteName;
+                console.log(websiteNameHeader);
+            }
+            else{
+                continue;
+            }
+          }
 
-    // websiteName = "Facebook";
-    // paragraph_TermAg.innerHTML = terms
+        // websiteNameHeader.innerHTML =  result["Website"][0].websiteName;
+        paragraph_TermAg.innerHTML = terms
+    });
+
 
 }
 getTermsAgreement()
