@@ -2,8 +2,12 @@ var terms = ""
 
 function getPageName(){
     var path = window.location.pathname;
+    var site = location.hostname,
+    title = document.title;
+
+console.log("Site: " + site + " - Title: " + title + "Path" + path);
     var page = path.split("/").pop();
-    return page;
+    return site;
 }
 
 async function loadData() {
@@ -32,6 +36,8 @@ function getTermsAgreement(){
                 }
                 websiteNameHeader.innerHTML =  result["Website"][i].websiteName;
                 console.log(websiteNameHeader);
+                paragraph_TermAg.innerHTML = terms
+
             }
             else{
                 continue;
@@ -39,7 +45,7 @@ function getTermsAgreement(){
           }
 
         // websiteNameHeader.innerHTML =  result["Website"][0].websiteName;
-        paragraph_TermAg.innerHTML = terms
+        // paragraph_TermAg.innerHTML = terms
     });
 
 
