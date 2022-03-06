@@ -1,4 +1,9 @@
- .u-section-1 {
+.hideme
+{
+    opacity:0;
+}
+
+.u-section-1 {
   background-image: none;
 }
 
