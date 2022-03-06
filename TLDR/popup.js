@@ -1,7 +1,14 @@
 var terms = ""
 var pageName = "";
 var buttonSimplify = document.getElementById("simplifyButton");
+var resourceButton = document.getElementById("resourceButton");
+var urlButton = document.getElementById("urlLink");
+var globalwebsiteNameHeader = document.getElementById("websiteName");
+
+
 buttonSimplify.addEventListener('click', displayTerms);
+resourceButton.addEventListener('click', displayResources);
+
 
 function getCurrentName(){
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
@@ -12,6 +19,7 @@ function getCurrentName(){
     }
     else{
       pageName = tabs[0].title;
+      
     }
   });
 }
@@ -44,9 +52,13 @@ function getTermsAgreement(){
                 websiteNameHeader.innerHTML =  result["Website"][i].websiteName;
                 console.log("websiteNameHeader: "+websiteNameHeader);
                 paragraph_TermAg.innerHTML = terms;
+                urlButton.classList.remove('disabled');
                 websiteUrl.href = result["Website"][i].url;
             }
             else{
+              if(globalwebsiteNameHeader.innerHTML == "TL-DR"){
+                urlButton.classList.add('disabled');
+              }
                 continue;
             }
           }
@@ -60,6 +72,7 @@ getCurrentName();
 getTermsAgreement();
 
 function displayTerms(){
+  getTermsAgreement();
   var paragraph_TermAg = document.getElementById("terms_agreement");
   console.log("OVERFLOW: "+ paragraph_TermAg.style.overflow );
 
@@ -74,6 +87,7 @@ function displayTerms(){
       // paragraph_TermAg.style.backgroundColor = "white";
       paragraph_TermAg.classList.add('noDataMessage');
       paragraph_TermAg.innerHTML = "At this moment, we do no have enough data on this website. Come back soon!"
+      urlButton.classList.add('disabled');
     }
 
 
@@ -86,7 +100,36 @@ function displayTerms(){
     paragraph_TermAg.classList.remove('noDataMessage');
 
   }
+}
 
+function displayResources(){
+  var paragraph_TermAg = document.getElementById("terms_agreement");
+
+  // displayTerms();
+  if (paragraph_TermAg.classList.contains("close_terms") ){
+    paragraph_TermAg.classList.add('open_terms');
+    paragraph_TermAg.classList.remove('close_terms');
+    paragraph_TermAg.classList.add('noDataMessage');
+
+    paragraph_TermAg.innerHTML = `<li><a href='https://tech.co/news/understand-online-terms-of-service-2018-05' target='_blank'>How to Understand Online Terms of Service</a></li>
+    <li><a href='https://www.europeanbusinessreview.com/why-should-you-always-read-the-terms-and-conditions-carefully/'>Why Should You Always Read The Terms And Conditions Carefully?</a></li>
+    <li><a href='https://www.ted.com/talks/veronica_barassi_what_tech_companies_know_about_your_kids?language=en'>What tech companies know about your kids
+    </a></li>
+    <li><a href='https://www.ted.com/talks/finn_lutzow_holm_myrstad_how_tech_companies_deceive_you_into_giving_up_your_data_and_privacy/transcript?language=en'>How tech companies deceive you into giving up your data and privacy
+    </a></li>`;
+
+
+  }
+  else if (paragraph_TermAg.classList.contains("open_terms")  ){
+    paragraph_TermAg.classList.add('close_terms');
+    paragraph_TermAg.classList.remove('open_terms');
+    paragraph_TermAg.innerHTML = "";
+    paragraph_TermAg.classList.remove('noDataMessage');
+
+
+  }
+
+  // paragraph_TermAg.style.color = "black";
 
 }
 
