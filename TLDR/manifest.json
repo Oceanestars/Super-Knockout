@@ -2,7 +2,7 @@
 {
     "manifest_version": 3,
     "name": "TLDR",
-    "description": "TL-DR or Too long didn't read gives you the terms and agreement in bite size. Be an informed consumer!",
+    "description": "TL-DR (Too Long - Didn’t Read) details a platform’s terms and conditions in bite size, digestible chunks. Be an informed consumer!",
     "permissions": ["storage", "activeTab", "tabs","scripting"],
     "host_permissions": [
         "http://*/*",
