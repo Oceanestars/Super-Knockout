@@ -1,5 +1,26 @@
+h1 {
+  background-color: #5b5e9a;
+  color: white;
+}
+.button {
+  background-color: #855f98; /* purple */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/* if popup is not applicable */
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
 #panel {
-  background-color: #20639c;
+  background-color: #c8c4c7;
   color: black;
   width: 100%;
 }

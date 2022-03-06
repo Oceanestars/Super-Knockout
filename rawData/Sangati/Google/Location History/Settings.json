@@ -1,0 +1,57 @@
+{
+  "createdTime": "2014-12-27T19:10:48.881Z",
+  "modifiedTime": "2021-06-18T22:48:03.299Z",
+  "historyEnabled": false,
+  "historyDeletionTime": "2022-03-05T15:32:34.877Z",
+  "deviceSettings": [{
+    "deviceTag": -457683569,
+    "reportingEnabled": false,
+    "legalCountryCode": "us",
+    "devicePrettyName": "Sangati’s iPhone",
+    "platformType": "IOS",
+    "deviceCreationTime": "2021-06-18T22:48:03.299Z",
+    "latestLocationReportingSettingChange": {
+      "reportingEnabledModificationTime": "2021-06-18T22:48:03.299Z"
+    },
+    "iosVersion": "15.3.1",
+    "deviceSpec": {
+      "device": "iPhone13,2"
+    }
+  }, {
+    "deviceTag": -83672196,
+    "reportingEnabled": false,
+    "legalCountryCode": "us",
+    "devicePrettyName": "Sangati’s iPhone",
+    "platformType": "IOS",
+    "deviceCreationTime": "2021-01-17T00:55:22.011Z",
+    "latestLocationReportingSettingChange": {
+      "reportingEnabledModificationTime": "2021-01-17T00:55:22.011Z"
+    },
+    "iosVersion": "14.6",
+    "deviceSpec": {
+      "device": "iPhone11,6"
+    }
+  }, {
+    "deviceTag": -1195494431,
+    "reportingEnabled": true,
+    "legalCountryCode": "us",
+    "devicePrettyName": "moto x4",
+    "platformType": "ANDROID",
+    "deviceCreationTime": "2018-07-19T21:51:15.936Z",
+    "androidOsLevel": 28,
+    "deviceSpec": {
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "product": "payton_amz",
+      "device": "payton",
+      "model": "moto x4",
+      "isLowRam": false
+    }
+  }],
+  "latestLocationHistorySettingChange": {
+    "historyEnabledModificationTime": "2020-12-23T18:59:11.790Z"
+  },
+  "retentionWindowDays": 90,
+  "hasReportedLocations": true,
+  "hasSetRetention": true
+}
