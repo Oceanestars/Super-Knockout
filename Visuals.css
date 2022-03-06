@@ -1,0 +1,58 @@
+#instagramData h1,
+#netflixData h1 {
+  text-align: center;
+}
+img {
+  width: 50%;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10%;
+}
+p {
+  padding: 5%;
+}
+
+.row:nth-of-type(2) {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+.circle,
+.circle2,
+.circle3 {
+  /* width: 500px;
+  height: 500px; */
+  line-height: 500px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  background: #000;
+  vertical-align: middle;
+  font-size: 4em;
+}
+.circle {
+  width: 303px;
+  height: 303px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 50%;
+}
+
+.circle2 {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+.circle3 {
+  width: 550px;
+  height: 550px;
+}
+
+.column {
+  text-align: center;
+  margin: auto;
+}
