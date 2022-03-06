@@ -2,15 +2,56 @@
     "Website" :  [
         {
             "websiteName": "Facebook",
-            "termsAgreement": ["Collect your friend list", "Keep track of post you like, share, and comment", "Collect your location"]
+            "termsAgreement": [
+                "Facebook stores and will collect data on your activity using cookies whether you have an account or not.", 
+                "You give them permission to use your name and profile picture and information about actions you have taken on Facebook in sponsored content, without any compensation to you.", 
+                "The service can read your private messages.",
+                "This service can view your browsing history. ",
+                "Deleted content is not really deleted. "
+            ],
+            "url": "https://www.facebook.com/terms.php"
         },
         {
             "websiteName": "Instagram",
-            "termsAgreement": ["Collect your friend list", "Keep track of post you like, share, and comment", "Collect your location"]
+            "termsAgreement": [
+                "They store data on you even if you did not interact with the service.",
+                 "Your identity is used in ads that are shown to other users. Ads shown to other users may include a reference to you as an implied endorsement. Might give away information about your own personal lifestyle to strangers.",
+                "The service can read and analyze the content of your private messages.",
+                "This service holds onto content that you’ve deleted",
+                "They keep user logs for an undefined period of time."
+            ],
+            "url": "https://help.instagram.com/581066165581870"
         },
         {
-            "websiteName": "Popup",
-            "termsAgreement": ["love sushi", "Test", "Test2"]
+            "websiteName": "Netflix",
+            "termsAgreement": [
+                "May collect, use, and share location data based on your IP address.",
+                "May keep personal information even after a request to delete for business interests or legal purposes." ,
+                "Track your activities using third-party cookies without your consent. "
+            ],
+            "url": "https://help.netflix.com/legal/termsofuse"
+        },
+        {
+            "websiteName": "Amazon",
+            "termsAgreement": [
+                "Terms can be changed at any time without any notice to the user." ,
+                "Third-party cookies are used for advertising. Provide a third party with information about you for targeted advertising.", 
+                "This service tracks you on other websites.",
+                "The service can delete your account without prior notice and without a reason.",
+                "If you do post content or submit material, and unless we indicate otherwise, you grant Amazon a nonexclusive, royalty-free, perpetual, irrevocable, and fully sublicensable right to use, reproduce, modify, adapt, publish, perform, translate, create derivative works from, distribute, and display such content throughout the world in any media. You grant Amazon and sublicensees the right to use the name that you submit in connection with such content if they choose."
+            ],
+            "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=202140280"
+        },
+        {
+            "websiteName": "Google",
+            "termsAgreement": [
+                "Store data on you even if you don’t interact with the service.",
+                "Identity is used in ads that are shown to other users." ,
+                "The service can read your private emails." ,
+                "Service can view your browser history." ,
+                "Holds onto content that you’ve deleted"
+            ],
+            "url": "https://policies.google.com/terms?hl=en-US "
         }
     ]
 }

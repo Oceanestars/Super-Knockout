@@ -1,36 +1,20 @@
 var terms = ""
+var pageName = "";
+var buttonSimplify = document.getElementById("simplifyButton");
+buttonSimplify.addEventListener('click', displayTerms);
 
-// chrome.runtime.onMessage.addListener(
-//     function(request, sender, sendResponse) {
-//       console.log(sender.tab ?
-//                   "from a content script:" + sender.tab.url :
-//                   "from the extension");
-//       if (request.greeting === "hello")
-//         sendResponse({farewell: "goodbye"});
-//     }
-//   );
-
-
-
-// chrome.runtime.onMessage.addListener(request => {
-//   console.log("Message from the background script:");
-//   console.log(request.greeting);
-//   return Promise.resolve({response: "Hi from content script"});
-// });
-
-async function getCurrentTab() {
-  let queryOptions = { active: true, currentWindow: true };
-  let [tab] = await chrome.tabs.query(queryOptions);
-  console.log(`Tab ${tab.id} is ${tab.url} and ${tab.title}`);
-  // sendMessageToTabs(tab)
-  // chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-  //     chrome.tabs.sendMessage(tabs[0].id, {greeting: "hello"}, function(response) {
-  //       console.log(response.farewell);
-  //     });
-  //   });
-  return tab;
+function getCurrentName(){
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    console.log("TITLE: " + tabs[0].title);
+    if(tabs[0].title.includes("Amazon Business")){
+      console.log("HEY");
+      pageName = "Amazon";
+    }
+    else{
+      pageName = tabs[0].title;
+    }
+  });
 }
-
 
 async function loadData() {
     const response = await fetch('./terms_agreement.json');
@@ -41,37 +25,68 @@ async function loadData() {
 function getTermsAgreement(){
 
     var data = loadData();
-    var pageName = "facebook.com";
-    // console.log("pageName: " + pageName);
+    console.log("pageName1: " + pageName);
   
     var paragraph_TermAg = document.getElementById("terms_agreement");
     var websiteNameHeader = document.getElementById("websiteName");
+    var websiteUrl = document.getElementById("urlLink");
 
     data.then(function(result) {
-        console.log(result["Website"][0].termsAgreement)
-        for (let i = 0; i < 3; i++) {
-            checkPage = pageName.includes(result["Website"][i].websiteName.toLowerCase())
-            console.log("IS this in json" + checkPage);
+        // console.log(result["Website"][0].termsAgreement)
+        for (let i = 0; i < 5; i++) {
+            // checkPage = pageName.includes(result["Website"][i].websiteName.toLowerCase())
+            // console.log("IS this in json" + checkPage);
 
-            if (checkPage){
+            if (pageName.toLowerCase() == result["Website"][i].websiteName.toLowerCase()){
                 for (let j = 0 ; j < result["Website"][i].termsAgreement.length; j++) {
                 terms += `<li> ${result["Website"][i].termsAgreement[j]} </li>`;
                 }
                 websiteNameHeader.innerHTML =  result["Website"][i].websiteName;
-                console.log(websiteNameHeader);
-                paragraph_TermAg.innerHTML = terms
-
+                console.log("websiteNameHeader: "+websiteNameHeader);
+                paragraph_TermAg.innerHTML = terms;
+                websiteUrl.href = result["Website"][i].url;
             }
             else{
                 continue;
             }
           }
-
-        // websiteNameHeader.innerHTML =  result["Website"][0].websiteName;
-        // paragraph_TermAg.innerHTML = terms
+          console.log("TEST:" + paragraph_TermAg.innerHTML.length )
+          
     });
 
 
 }
-getTermsAgreement()
+getCurrentName();
+getTermsAgreement();
+
+function displayTerms(){
+  var paragraph_TermAg = document.getElementById("terms_agreement");
+  console.log("OVERFLOW: "+ paragraph_TermAg.style.overflow );
+
+  if (paragraph_TermAg.classList.contains("close_terms") ){
+    console.log("OPEN");
+    paragraph_TermAg.classList.add('open_terms');
+    paragraph_TermAg.classList.remove('close_terms');
+    paragraph_TermAg.classList.add('noDataMessage');
+
+    // paragraph_TermAg.classList.add('scroll-text');
+    if(paragraph_TermAg.innerHTML.length >= 0 && paragraph_TermAg.innerHTML.length <= 20 ){
+      // paragraph_TermAg.style.backgroundColor = "white";
+      paragraph_TermAg.classList.add('noDataMessage');
+      paragraph_TermAg.innerHTML = "At this moment, we do no have enough data on this website. Come back soon!"
+    }
+
+
+  }
+   else if (paragraph_TermAg.classList.contains("open_terms")  ){
+    console.log("CLOSE");
+    // paragraph_TermAg.classList.remove('scroll-text');
+    paragraph_TermAg.classList.add('close_terms');
+    paragraph_TermAg.classList.remove('open_terms');
+    paragraph_TermAg.classList.remove('noDataMessage');
+
+  }
+
+
+}
 
