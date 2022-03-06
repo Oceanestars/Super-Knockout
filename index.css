@@ -1,5 +1,5 @@
  .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("images/istockphoto-1277127522-612x612-8.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("images/istockphoto-1277127522-612x612.jpg");
   background-position: 50% 50%;
 }
 
@@ -108,6 +108,12 @@
   font-size: 1.5rem;
   font-weight: 500;
   margin: 0 60px 0 32px;
+}
+
+.u-section-2 .u-btn-1 {
+  background-image: none;
+  text-decoration: underline !important;
+  padding: 0;
 }
 
 @media (max-width: 1199px) {

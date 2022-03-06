@@ -97,7 +97,7 @@
 
 .u-section-2 .u-image-1 {
   min-height: 412px;
-  background-image: url("images/istockphoto-1277127522-612x612.jpg");
+  background-image: url("images/netflix-short2-7.png");
   background-position: 50% 50%;
 }
 
@@ -506,33 +506,34 @@
     margin-left: 0;
   }
 } .u-section-4 {
-  background-image: url("images/netflix-screen.png");
+  background-image: url("images/netflix-screen2.png");
+  background-position: 50% 50%;
 }
 
 .u-section-4 .u-sheet-1 {
-  min-height: 681px;
+  min-height: 698px;
 }
 
 @media (max-width: 1199px) {
   .u-section-4 .u-sheet-1 {
-    min-height: 562px;
+    min-height: 576px;
   }
 }
 
 @media (max-width: 991px) {
   .u-section-4 .u-sheet-1 {
-    min-height: 430px;
+    min-height: 441px;
   }
 }
 
 @media (max-width: 767px) {
   .u-section-4 .u-sheet-1 {
-    min-height: 323px;
+    min-height: 331px;
   }
 }
 
 @media (max-width: 575px) {
   .u-section-4 .u-sheet-1 {
-    min-height: 203px;
+    min-height: 208px;
   }
 }
