@@ -5,7 +5,7 @@ button {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  min-width: 450px;
+  min-width: 580px;
   min-height: 200px;
 }
 h1 {
@@ -23,6 +23,7 @@ h1 {
   font-size: 1em;
   margin: 4px 2px;
   cursor: pointer;
+  width: 21%;
 }
 .button:hover {
   background-color: #ac79c3;
@@ -34,7 +35,8 @@ a {
 }
 /* if popup is not applicable */
 .disabled {
-  opacity: 0.6;
+  pointer-events: none;
+  opacity: 0.3;
   cursor: not-allowed;
 }
 #panel {
@@ -80,4 +82,12 @@ li {
   to {
     -webkit-transform: translateY(0%);
   }
+}
+
+#terms_agreement a {
+  color: black;
+  text-decoration: underline;
+}
+#terms_agreement a:hover {
+  color: #ac79c3;
 }
