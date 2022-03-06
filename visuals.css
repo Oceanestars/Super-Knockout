@@ -37,50 +37,39 @@ p {
 height: 500px; */
 
   line-height: 500px;
-
   border-radius: 50%;
-
   font-size: 50px;
-
   color: #fff;
-
   text-align: center;
-
   background: #000;
-
   vertical-align: middle;
-
   font-size: 4em;
 }
 
 .circle {
   width: 303px;
-
   height: 303px;
-
   text-align: center;
-
   margin: auto;
-
-  padding-bottom: 50%;
+  padding-bottom: 50% !important;
 }
 
 .circle2 {
   width: 300px;
-
   height: 300px;
-
   text-align: center;
+}
+.circle2 p,
+.circle p {
+  padding-top: 30%;
 }
 
 .circle3 {
   width: 550px;
-
   height: 550px;
 }
 
 .column {
   text-align: center;
-
   margin: auto;
 }
