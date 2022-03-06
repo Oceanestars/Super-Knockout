@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap");
+
+body,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  min-width: 450px;
+  min-height: 200px;
+}
 h1 {
   background-color: #5b5e9a;
   color: white;
@@ -10,9 +20,17 @@ h1 {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1em;
   margin: 4px 2px;
   cursor: pointer;
+}
+.button:hover {
+  background-color: #ac79c3;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
 }
 /* if popup is not applicable */
 .disabled {
@@ -22,5 +40,44 @@ h1 {
 #panel {
   background-color: #c8c4c7;
   color: black;
-  width: 100%;
+  width: 87%;
+  margin-bottom: 5%;
+  margin-right: 30%;
+  padding: 2% 5% 2% 3%;
+  padding-right: 10%;
+}
+
+li {
+  margin: 6% 0;
+}
+
+.close_terms {
+  /* width: 0px; */
+  height: 0px;
+  transition: width 2s, height 1s;
+  overflow: hidden;
+}
+.open_terms {
+  width: 300px;
+  height: auto;
+  transition: width 2s, height 1s;
+  overflow: auto;
+  overflow-y: hidden;
+}
+.noDataMessage {
+  padding: 6%;
+  background-color: white;
+}
+
+/* Disregard the code below */
+.scroll-text {
+  animation: my-animation 3s linear;
+}
+@keyframes my-animation {
+  from {
+    -webkit-transform: translateY(20%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+  }
 }

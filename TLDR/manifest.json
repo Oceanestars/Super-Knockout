@@ -2,7 +2,12 @@
 {
     "manifest_version": 3,
     "name": "TLDR",
+    "description": "TL-DR or Too long didn't read gives you the terms and agreement in bite size. Be an informed consumer!",
     "permissions": ["storage", "activeTab", "tabs","scripting"],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
     "version": "0.0.1",
     "minimum_chrome_version": "42",
     "devtools_page": "main.html",
@@ -11,6 +16,7 @@
       "128": "logo/tldr.png"
     },
     "action": {
+        "default_title": "TLDR",
         "default_popup": "popup.html"
     },
     "background": {
