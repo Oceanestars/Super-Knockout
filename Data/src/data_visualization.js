@@ -1,13 +1,20 @@
-import { pieChart} from './d3-components/pie-chart.js';
+import { pieChart } from './d3-components/pie-chart.js';
 
 var uniqueTitleCount;
 var top5Value = [];
 var top5Title = [];
 var data = {}
 function netflixDataVisualization(){
-    dfd.readCSV("../Sangati/Netflix/NetflixViewingHistory.csv")
+    dfd.readCSV("../KTNetflix/KatNetflixViewingHistory.csv")
     .then(df => {
+        //trying to change the title column to be everything before the :
+        df.TitleOg = df.Title
+        for(i = 0; i < df.length; i++){
+            let index = df.TitleOg.indexOf(":")
+            df.Title[i] = df.TitleOg[i].substring(0, index)
+        }
 
+        //what Oceane did
         df.print()
         df.ctypes.print()
         let group_df = df.groupby(["Title"]).sum()
