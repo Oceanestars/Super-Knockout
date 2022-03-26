@@ -7,12 +7,22 @@ var data = {}
 function netflixDataVisualization(){
     dfd.readCSV("../KTNetflix/KatNetflixViewingHistory.csv")
     .then(df => {
-        //trying to change the title column to be everything before the :
-        df.TitleOg = df.Title
-        for(i = 0; i < df.length; i++){
-            let index = df.TitleOg.indexOf(":")
-            df.Title[i] = df.TitleOg[i].substring(0, index)
-        }
+        // parsing on the ':' to get just the title of a tv show
+        let new_column = df.Title.values
+        df.addColumn("TitleOg", new_column, { inplace: true})
+
+        df.Title = df.Title.values.map((x) => {
+            let new_out = x
+            if(x == null){
+                return new_out // ideally these rows should be deleted... not sure how tho
+            }
+            
+            let ind = x.indexOf(":")
+            if (ind >= 0){
+                new_out = x.substring(0, ind)
+            }
+            return new_out
+        })
 
         //what Oceane did
         df.print()

@@ -1,6 +1,6 @@
 
-let text = "Happy Birthday: heyo"
+let text = "Happy Birthday heyo"
 let ind = text.indexOf(":")
-let nuevo = text.substring(0, ind)
+let new_out = text.substring(0, ind)
 
-console.log(nuevo)
+console.log(ind)
